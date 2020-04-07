@@ -27,7 +27,7 @@ client.on('ready', () => {
 
 
 client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find(channel => channel.name === "welcome");
+    const channel = member.guild.channels.cache.find(channel => channel.name === "welcome");
     if(!channel) return;
     channel.send(`Welcome ${member}, The universe has many horrors yet to throw at us. This is not the end of our struggle. This is just the beginning of our crusade to save Humanity. Be faithful! Be strong! Be vigilant!
     
