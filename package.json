@@ -1,17 +1,22 @@
 {
   "name": "30k-bot",
   "version": "1.0.0",
-  "description": "Dachi's Discord Bot.",
   "main": "30k.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node ./src/30k.js"
+  },
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/CNTODachi/30k-bot"
+  },
+  "author": "Dachi",
+  "license": "ISC",
   "dependencies": {
     "discord.js": "^12.1.1",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": ""
 }
