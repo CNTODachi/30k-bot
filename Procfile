@@ -1,0 +1,1 @@
+worker: node ./src/30k.js
