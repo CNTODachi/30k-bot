@@ -27,9 +27,9 @@ client.on('ready', () => {
 
 
 client.on('guildMemberAdd', member => {
-    if(message.author.bot) return;
-    let arrivalswelcome = client.channels.cache.get('697220115774701660');
-    arrivalswelcome.send(`Welcome ${member}, The universe has many horrors yet to throw at us. This is not the end of our struggle. This is just the beginning of our crusade to save Humanity. Be faithful! Be strong! Be vigilant!
+    const channel = member.guild.channels.find(channel => channel.name === "welcome");
+    if(!channel) return;
+    channel.send(`Welcome ${member}, The universe has many horrors yet to throw at us. This is not the end of our struggle. This is just the beginning of our crusade to save Humanity. Be faithful! Be strong! Be vigilant!
     
     But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel (individual messages if multiple legions/factions)
 
@@ -53,7 +53,7 @@ client.on('guildMemberAdd', member => {
     Sisters of Silence
     Mechanicus`);
 
-})
+});
 
 //Code that is running on  server live
 client.on('message', function(message) {
