@@ -26,7 +26,6 @@ client.on('ready', () => {
 });
 
 
-
 client.on('guildMemberAdd', member =>{
     const channel = member.guild.channels.find(channel => channel.name === "announcments");
     if(!channel) return;
