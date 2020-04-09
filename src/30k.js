@@ -20,6 +20,7 @@ const EmperorsChildren = '697066681092145172';
 const Custodians = '697070014376968256';
 const Sisters = '697083360526204958';
 const Mech = '697015898606927903';
+const Scars = '697798585093324811';
 
 client.on('ready', () => {
     console.log(`${client.user.tag} has logged in.`);
@@ -31,7 +32,8 @@ client.on('guildMemberAdd', member => {
     if(!channel) return;
     channel.send(`Welcome ${member}, The universe has many horrors yet to throw at us. This is not the end of our struggle. This is just the beginning of our crusade to save Humanity. Be faithful! Be strong! Be vigilant!
     
-    But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel (individual messages if multiple legions/factions)
+But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel,
+    (individual messages if multiple legions/factions)
 
     Night Lords
     Salamanders
@@ -49,9 +51,10 @@ client.on('guildMemberAdd', member => {
     Blood Angels
     Imperial Fists
     Emperors Children
-    Custodians
+    White Scars
+    Custodes
     Sisters of Silence
-    Mechanicus`);
+    Mechanicum`);
 
 });
 
@@ -64,6 +67,13 @@ client.on('message', function(message) {
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Ave Dominus Nox! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(Nightlords);
+    }
+
+    else if(msg.includes ('Scars')) {
+        const user = message.author;
+        let arrivalswelcome = client.channels.cache.get('697220115774701660');
+        arrivalswelcome.send(`<@${user.id}> Into the fires of battle, unto the anvil of war! Use <#697008604162687028> to say hello and welcome my sons.`);
+        message.member.roles.add(Scars);
     }
 
     else if(msg.includes ('salamanders')) {
@@ -171,7 +181,7 @@ client.on('message', function(message) {
         message.member.roles.add(EmperorsChildren);
     }
 
-    else if(msg.includes ('custodian')) {
+    else if(msg.includes ('custodes')) {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Only in Death does Duty End! Use <#697008604162687028> to say hello and welcome my sons.`);
@@ -185,7 +195,7 @@ client.on('message', function(message) {
         message.member.roles.add(Sisters);
     }
     
-    else if(msg.includes ('mechanicus')) {
+    else if(msg.includes ('mechanicum')) {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> There is no truth in flesh, only betrayal. There is no strength in flesh, only weakness. There is no constancy in flesh, only decay. There is no certainty in flesh but death. Use <#697008604162687028> to say hello and welcome my friends.`);
