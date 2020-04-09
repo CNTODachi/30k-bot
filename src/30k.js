@@ -33,28 +33,15 @@ client.on('guildMemberAdd', member => {
     channel.send(`Welcome ${member}, The universe has many horrors yet to throw at us. This is not the end of our struggle. This is just the beginning of our crusade to save Humanity. Be faithful! Be strong! Be vigilant!
     
 But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel,
-    (individual messages if multiple legions/factions)
+(individual messages if multiple legions/factions)
 
-    Night Lords
-    Salamanders
-    Death Guard
-    World Eaters
-    Raven Guard
-    Word Bearers
-    Thousand Sons
-    Dark Angels
-    Iron Warriors
-    Iron Hands
-    Sons of Horus
-    Alpha Legion
-    Ultramarines
-    Blood Angels
-    Imperial Fists
-    Emperors Children
-    White Scars
-    Custodes
-    Sisters of Silence
-    Mechanicum`);
+    Night Lords             Salamanders         Death Guard
+    World Eaters            Raven Guard         Word Bearers
+    Thousand Sons           Dark Angels         Iron Warriors
+    Iron Hands              Sons of Horus       Alpha Legion
+    Ultramarines            Blood Angels        Imperial Fists
+    Emperors Children       White Scars         Custodes
+    Sisters of Silence      Mechanicum`);
 
 });
 
