@@ -35,12 +35,12 @@ client.on('guildMemberAdd', member => {
 But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel,
 (individual messages if multiple legions/factions)
 
-    Night Lords             Salamanders         Death Guard
-    World Eaters            Raven Guard         Word Bearers
-    Thousand Sons           Dark Angels         Iron Warriors
-    Iron Hands              Sons of Horus       Alpha Legion
-    Ultramarines            Blood Angels        Imperial Fists
-    Emperors Children       White Scars         Custodes
+    Night Lords      Salamanders      Death Guard
+    World Eaters      Raven Guard      Word Bearers
+    Thousand Sons      Dark Angels      Iron Warriors
+    Iron Hands      Sons of Horus      Alpha Legion
+    Ultramarines      Blood Angels      Imperial Fists
+    Emperors Children      White Scars      Custodes
     Sisters of Silence      Mechanicum`);
 
 });
