@@ -21,6 +21,11 @@ const Custodians = '697070014376968256';
 const Sisters = '697083360526204958';
 const Mech = '697015898606927903';
 const Scars = '697798585093324811';
+const Wolves = '697856557664305273';
+const Auxilia = '698095353492406343';
+const Excertus = '698143883439374356';
+const Dae = '698459450247217193';
+
 
 client.on('ready', () => {
     console.log(`${client.user.tag} has logged in.`);
@@ -35,13 +40,14 @@ client.on('guildMemberAdd', member => {
 But most of all say hello in the <#697008604162687028> channel and type in your legion as seen below in this channel,
 (individual messages if multiple legions/factions)
 
-    Night Lords      Salamanders      Death Guard
-    World Eaters      Raven Guard      Word Bearers
-    Thousand Sons      Dark Angels      Iron Warriors
-    Iron Hands      Sons of Horus      Alpha Legion
-    Ultramarines      Blood Angels      Imperial Fists
-    Emperors Children      White Scars      Custodes
-    Sisters of Silence      Mechanicum`);
+Night Lords             Salamanders             Death Guard
+World Eaters            Raven Guard             Word Bearers
+Thousand Sons           Dark Angels             Iron Warriors
+Iron Hands              Sons of Horus           Alpha Legion
+Ultramarines            Blood Angels            Imperial Fists
+Emperors Children       White Scars             Space Wolves
+Custodes                Sisters of Silence      Mechanicum
+Imperialis Auxilia      Excertus Imperialis     Daemons`);
 
 });
 
@@ -154,7 +160,7 @@ client.on('message', function(message) {
         message.member.roles.add(BloodAngels);
     }
 
-    else if(msg.includes ('imperial')) {
+    else if(msg.includes ('fists')) {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Primarch-Progenitor, to your glory and the glory of him on earth! Use <#697008604162687028> to say hello and welcome my sons.`);
@@ -187,6 +193,34 @@ client.on('message', function(message) {
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> There is no truth in flesh, only betrayal. There is no strength in flesh, only weakness. There is no constancy in flesh, only decay. There is no certainty in flesh but death. Use <#697008604162687028> to say hello and welcome my friends.`);
         message.member.roles.add(Mech);
+    }
+
+    else if(msg.includes ('wolves')) {
+        const user = message.author;
+        let arrivalswelcome = client.channels.cache.get('697220115774701660');
+        arrivalswelcome.send(`<@${user.id}> For Russ and the Allfather! Use <#697008604162687028> to say hello and welcome my sons.`);
+        message.member.roles.add(Wolves);
+    }
+
+    else if(msg.includes ('auxilia')) {
+        const user = message.author;
+        let arrivalswelcome = client.channels.cache.get('697220115774701660');
+        arrivalswelcome.send(`<@${user.id}> For the Emperor! Use <#697008604162687028> to say hello and welcome my friends.`);
+        message.member.roles.add(Auxilia);
+    }
+
+    else if(msg.includes ('excertus')) {
+        const user = message.author;
+        let arrivalswelcome = client.channels.cache.get('697220115774701660');
+        arrivalswelcome.send(`<@${user.id}> For the Emperor! Use <#697008604162687028> to say hello and welcome my friends.`);
+        message.member.roles.add(Excertus);
+    }
+
+    else if(msg.includes ('daemons')) {
+        const user = message.author;
+        let arrivalswelcome = client.channels.cache.get('697220115774701660');
+        arrivalswelcome.send(`<@${user.id}> Death to all! Use <#697008604162687028> to say hello. Now begone Daemons from this channel your prescence will not be tolerated.`);
+        message.member.roles.add(Dae);
     }
 
 });
