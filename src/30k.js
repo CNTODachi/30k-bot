@@ -56,336 +56,336 @@ imperialis auxilia      excertus imperialis     daemons`);
 //Code that is running on  server live
 client.on('message', function(message) {
     if(message.author.bot) return;
-    if(msg.content === 'night lords') {
+    if(message.content === 'night lords') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Ave Dominus Nox! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(Nightlords);
     }
 
-    else if(msg.content === 'white scars') {
+    else if(message.content === 'white scars') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Into the fires of battle, unto the anvil of war! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(Scars);
     }
 
-    else if(msg.content === 'salamanders') {
+    else if(message.content === 'salamanders') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Into the fires of battle, unto the anvil of war! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(Salamanders);
     }
 
-    else if(msg.content === 'death guard') {
+    else if(message.content === 'death guard') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> You are my unbroken blades. You are the Death Guard! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(DeathGuard);
     }
 
-    else if(msg.content === 'world eaters') {
+    else if(message.content === 'world eaters') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Blood for the Primarch! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(WorldEaters);
     }
 
-    else if(msg.content === 'raven guard') {
+    else if(message.content === 'raven guard') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Victorus Aut Mortis! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(RavenGuard);
     }
 
-    else if(msg.content === 'word bearers') {
+    else if(message.content === 'word bearers') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> From the fires of betrayal unto the blood of revenge we bring the name of Lorgar, the Bearer of the Word! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(WordBearers);
     }
 
-    else if(msg.content === 'thousand sons') {
+    else if(message.content === 'thousand sons') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> All is dust! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(ThousandSons);
     }
 
-    else if(msg.content === 'dark angels') {
+    else if(message.content === 'dark angels') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Repent! For tomorrow you die! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(DarkAngels);
     }
 
-    else if(msg.content === 'iron warriors') {
+    else if(message.content === 'iron warriors') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Iron Within! Iron Without! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(IronWarriors);
     }
 
-    else if(msg.content === 'iron hands') {
+    else if(message.content === 'iron hands') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Flesh is weak! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(IronHands);
     }
 
-    else if(msg.content === 'sons of horus') {
+    else if(message.content === 'sons of horus') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> For the Warmaster! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(SonsofHorus);
     }
 
-    else if(msg.content === 'alpha legion') {
+    else if(message.content === 'alpha legion') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Hydra Dominatus! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(AlphaLegion);
     }
 
-    else if(msg.content === 'ultramarines') {
+    else if(message.content === 'ultramarines') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Courage and Honour! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(UltraMarines);
     }
 
-    else if(msg.content === 'blood angels') {
+    else if(message.content === 'blood angels') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> By the blood of Sanguineous! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(BloodAngels);
     }
 
-    else if(msg.content === 'imperial fists') {
+    else if(message.content === 'imperial fists') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Primarch-Progenitor, to your glory and the glory of him on earth! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(ImperialFists);
     }
 
-    else if(msg.content === 'emperors children') {
+    else if(message.content === 'emperors children') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Children of the Emperor! Death to his foes! Use <#697008604162687028> to say hello. Now begone traitors.`);
         message.member.roles.add(EmperorsChildren);
     }
 
-    else if(msg.content === 'custodes') {
+    else if(message.content === 'custodes') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Only in Death does Duty End! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(Custodians);
     }
 
-    else if(msg.content === 'sisters of silence') {
+    else if(message.content === 'sisters of silence') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Daughters of the emperor! Use <#697008604162687028> to say hello and welcome my daughters.`);
         message.member.roles.add(Sisters);
     }
     
-    else if(msg.content === 'mechanicum') {
+    else if(message.content === 'mechanicum') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> There is no truth in flesh, only betrayal. There is no strength in flesh, only weakness. There is no constancy in flesh, only decay. There is no certainty in flesh but death. Use <#697008604162687028> to say hello and welcome my friends.`);
         message.member.roles.add(Mech);
     }
 
-    else if(msg.content === 'space wolves') {
+    else if(message.content === 'space wolves') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> For Russ and the Allfather! Use <#697008604162687028> to say hello and welcome my sons.`);
         message.member.roles.add(Wolves);
     }
 
-    else if(msg.content === 'imperialis auxilia') {
+    else if(message.content === 'imperialis auxilia') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> For the Emperor! Use <#697008604162687028> to say hello and welcome my friends.`);
         message.member.roles.add(Auxilia);
     }
 
-    else if(msg.content === 'excertus imperialis') {
+    else if(message.content === 'excertus imperialis') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> For the Emperor! Use <#697008604162687028> to say hello and welcome my friends.`);
         message.member.roles.add(Excertus);
     }
 
-    else if(msg.content === 'daemons') {
+    else if(message.content === 'daemons') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Death to all! Use <#697008604162687028> to say hello. Now begone Daemons from this channel your prescence will not be tolerated.`);
         message.member.roles.add(Dae);
     }
 
-    else if(msg.content === 'remove night lords') {
+    else if(message.content === 'remove night lords') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Nightlords);
     }
 
-    else if(msg.content === 'remove white scars') {
+    else if(message.content === 'remove white scars') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Scars);
     }
 
-    else if(msg.content === 'remove salamanders') {
+    else if(message.content === 'remove salamanders') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Salamanders);
     }
 
-    else if(msg.content === 'remove death guard') {
+    else if(message.content === 'remove death guard') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(DeathGuard);
     }
 
-    else if(msg.content === 'remove world eaters') {
+    else if(message.content === 'remove world eaters') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(WorldEaters);
     }
 
-    else if(msg.content === 'remove raven guard') {
+    else if(message.content === 'remove raven guard') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(RavenGuard);
     }
 
-    else if(msg.content === 'remove word bearers') {
+    else if(message.content === 'remove word bearers') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(WordBearers);
     }
 
-    else if(msg.content === 'remove thousand sons') {
+    else if(message.content === 'remove thousand sons') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(ThousandSons);
     }
 
-    else if(msg.content === 'remove dark angels') {
+    else if(message.content === 'remove dark angels') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(DarkAngels);
     }
 
-    else if(msg.content === 'remove iron warriors') {
+    else if(message.content === 'remove iron warriors') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(IronWarriors);
     }
 
-    else if(msg.content === 'remove iron hands') {
+    else if(message.content === 'remove iron hands') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(IronHands);
     }
 
-    else if(msg.content === 'remove sons of horus') {
+    else if(message.content === 'remove sons of horus') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(SonsofHorus);
     }
 
-    else if(msg.content === 'remove alpha legion') {
+    else if(message.content === 'remove alpha legion') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(AlphaLegion);
     }
 
-    else if(msg.content === 'remove ultramarines') {
+    else if(message.content === 'remove ultramarines') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(UltraMarines);
     }
 
-    else if(msg.content === 'remove blood angels') {
+    else if(message.content === 'remove blood angels') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(BloodAngels);
     }
 
-    else if(msg.content === 'remove imperial fists') {
+    else if(message.content === 'remove imperial fists') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(ImperialFists);
     }
 
-    else if(msg.content === 'remove emperors children') {
+    else if(message.content === 'remove emperors children') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(EmperorsChildren);
     }
 
-    else if(msg.content === 'remove custodes') {
+    else if(message.content === 'remove custodes') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Custodians);
     }
 
-    else if(msg.content === 'remove sisters of silence') {
+    else if(message.content === 'remove sisters of silence') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Sisters);
     }
     
-    else if(msg.content === 'remove mechanicum') {
+    else if(message.content === 'remove mechanicum') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Mech);
     }
 
-    else if(msg.content === 'remove space wolves') {
+    else if(message.content === 'remove space wolves') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Wolves);
     }
 
-    else if(msg.content === 'remove imperialis auxilia') {
+    else if(message.content === 'remove imperialis auxilia') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Auxilia);
     }
 
-    else if(msg.content === 'remove excertus imperialis') {
+    else if(message.content === 'remove excertus imperialis') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
         message.member.roles.remove(Excertus);
     }
 
-    else if(msg.content === 'remove daemons') {
+    else if(message.content === 'remove daemons') {
         const user = message.author;
         let arrivalswelcome = client.channels.cache.get('697220115774701660');
         arrivalswelcome.send(`<@${user.id}> Role removed.`);
