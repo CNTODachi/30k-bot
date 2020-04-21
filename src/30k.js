@@ -41,7 +41,6 @@ client.on('guildMemberAdd', member => {
     
 But most of all say hello in the <#697008604162687028> channel and type in your legion in all lower case as seen below in this channel.
 (individual messages if multiple legions/factions)
-
 night lords             salamanders             death guard
 world eaters            raven guard             word bearers
 thousand sons           dark angels             iron warriors
@@ -396,7 +395,3 @@ client.on('message', function(message) {
 
 
 client.login(process.env.BOT_TOKEN);
-
-client.on("error", (e) => console.error(e));
-client.on("warn", (e) => console.warn(e));
-client.on("debug", (e) => console.info(e));
