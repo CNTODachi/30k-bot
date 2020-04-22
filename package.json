@@ -4,7 +4,7 @@
   "main": "30k.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node ./src/30k.js"
+    "start": "node ./src/30k.js"
   },
   "respository": {
     "type": "git",
@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.1.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {},
   "keywords": [],
