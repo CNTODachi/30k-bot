@@ -1,6 +1,8 @@
 require('dotenv').config();
 const discord = require('discord.js');
 const client = new discord.Client();
+const fetch = require("node-fetch");
+
 const Nightlords = '697015353313722419';
 const Salamanders = '697015430824329218';
 const DeathGuard = '697015511094919168';
@@ -392,6 +394,39 @@ client.on('message', function(message) {
     }
 
 });
+
+const wakeUpDyno = (url, interval = 25, callback) => {
+    const milliseconds = interval * 60000;
+    setTimeout(() => {
+
+        try { 
+            console.log(`setTimeout called.`);
+            // HTTP GET request to the dyno's url
+            fetch(url).then(() => console.log(`Fetching ${url}.`)); 
+        }
+        catch (err) { // catch fetch errors
+            console.log(`Error fetching ${url}: ${err.message} 
+            Will try again in ${interval} minutes...`);
+        }
+        finally {
+
+            try {
+                callback(); // execute callback, if passed
+            }
+            catch (e) { // catch callback error
+                callback ? console.log("Callback failed: ", e.message) : null;
+            }
+            finally {
+                // do it all again
+                return wakeUpDyno(url, interval, callback);
+            }
+            
+        }
+
+    }, milliseconds);
+};
+
+module.exports = wakeUpDyno;
 
 
 client.login(process.env.BOT_TOKEN);
